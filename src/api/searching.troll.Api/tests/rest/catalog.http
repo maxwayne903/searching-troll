@@ -1,3 +1,7 @@
 GET http://localhost:5289/api/catalog HTTP/1.1
 
+GET http://localhost:5289/api/catalog/42 HTTP/1.1
+
+GET http://localhost:5289/api/catalog/test HTTP/1.1
+
 POST http://localhost:5289/api/catalog HTTP/1.1
