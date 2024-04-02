@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "searching.troll.Api", "sear
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "searching.troll.Domain", "searching.troll.Domain\searching.troll.Domain.csproj", "{74725734-68EA-4DD5-A2CA-F93E8594E37B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "searching.troll.Data", "searching.troll.Data\searching.troll.Data.csproj", "{F05E67F4-F693-4702-8511-1E538DC58BE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{74725734-68EA-4DD5-A2CA-F93E8594E37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74725734-68EA-4DD5-A2CA-F93E8594E37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74725734-68EA-4DD5-A2CA-F93E8594E37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05E67F4-F693-4702-8511-1E538DC58BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05E67F4-F693-4702-8511-1E538DC58BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05E67F4-F693-4702-8511-1E538DC58BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05E67F4-F693-4702-8511-1E538DC58BE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
