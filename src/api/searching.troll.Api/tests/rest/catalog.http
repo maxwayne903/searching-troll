@@ -1,44 +1,47 @@
-//GET http://localhost:5289/api/catalog HTTP/1.1
+GET http://localhost:5289/api/catalog HTTP/1.1
 
-//GET http://localhost:5289/api/catalog/42 HTTP/1.1
+GET http://localhost:5289/api/catalog/42 HTTP/1.1
 
-//GET http://localhost:5289/api/catalog/test HTTP/1.1
+GET http://localhost:5289/api/catalog/test HTTP/1.1
 
-//POST http://localhost:5289/api/catalog HTTP/1.1
-//Content-Type: application/json
+POST http://localhost:5289/api/catalog HTTP/1.1
+Content-Type: application/json
 
-//{
-    //"name": "Test",
-   // "description": "Test Description",
-   // "brand": "Test Brand",
-   // "price": 10.0
-//}
+{
+"name": "Test",
+   "description": "Test Description",
+   "brand": "Test Brand",
+   "price": 10.0
+}
 
-//POST  http://localhost:5289/api/catalog/42/ratings HTTP/1.1
-//Content-Type: application/json
+POST  http://localhost:5289/api/catalog/42/ratings HTTP/1.1
+Content-Type: application/json
 
-//{
-//"Stars":4,
-//"Username": "blabla",
-//"Review": "this is blabla"
-//
+{
+"Stars":4,
+"Username": "blabla",
+"Review": "this is blabla"
+}
 
-# PUT http://localhost:5289/api/catalog/42 HTTP/1.1
-# Content-Type: application/json
+PUT http://localhost:5289/api/catalog/42 HTTP/1.1
+Content-Type: application/json
 
-# {
-#     "name": "string",
-#     "description": "long string",
-#     "brand": "brand here",
-#     "price": 10.0
-# }
+{
+    "name": "string",
+    "description": "long string",
+    "brand": "brand here",
+    "price": 10.0
+}
 
-# PUT http://localhost:5289/api/catalog/42 HTTP/1.1
-# Content-Type: application/json
+PUT http://localhost:5289/api/catalog/42 HTTP/1.1
+Content-Type: application/json
 
-# {
-#     "name": "string",
-#     "description": "long string",
-#     "brand": "brand here",
-#     "price": 20.0
-# }
+{
+    "name": "string",
+    "description": "long string",
+    "brand": "brand here",
+    "price": 20.0
+}
+
+GET http://localhost:5289/api/catalog 
+// assumption to test with the localhost:5289
