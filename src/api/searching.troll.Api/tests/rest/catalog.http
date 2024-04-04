@@ -45,3 +45,37 @@ Content-Type: application/json
 
 GET http://localhost:5289/api/catalog 
 // assumption to test with the localhost:5289
+
+{
+    "name": "Test",
+   "description": "Test Description",
+   "brand": "Test Brand",
+   "price": -10.0
+}
+
+{
+    "name": "",
+   "description": "Test Description",
+   "brand": "Test Brand",
+   "price": -10.0
+}
+{
+    "id" : 2,
+    "name": "updated 2",
+   "description": "updated 2",
+   "brand": "updated 2",
+   "price": 20.0
+}
+{
+        "id" : 200,
+    "name": "updated 2",
+   "description": "updated 2",
+   "brand": "updated 2",
+   "price": 20.0
+}
+{
+    "name": "Final Test",
+   "description": "Final",
+   "brand": "final",
+   "price": 15.0
+}
