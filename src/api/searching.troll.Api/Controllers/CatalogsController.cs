@@ -37,10 +37,11 @@ namespace searching.troll.Api.Controllers
          [HttpGet("{id:int}")]
             public IActionResult GetItem(int id)
             {
-                var item = new Item("Item 1", "Description 1", "Brand 1", 100.00m)
+                var item = _context.Items.Find(id);
+                if (item == null)
                 {
-                    Id = id
-                };
+                    return NotFound();
+                }
                 return Ok(item);
             }
             [HttpPost]
