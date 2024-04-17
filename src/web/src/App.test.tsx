@@ -9,10 +9,17 @@ describe("App component tests", () => {
         expect(screen.getByText(/searching-troll/i)).toBeDefined(); 
     })
 
-    test("should show 'All' link in menu", () => {
+    test("should show 'My Order' link in menu", () => {
 
         render(<App />);
 
-        expect(screen.getByText(/My Order/i)).toBeDefined();
+        expect(screen.getByRole('link', {name: /My Order/i})).toBeDefined();
     })
+    
+    test("should show 'Home' heading in 'H1' tag", () => {
+
+        render(<App />);
+
+        expect(screen.getByRole('heading', {level: 1, name: /Home/i})).toBeDefined();
+})
 })
