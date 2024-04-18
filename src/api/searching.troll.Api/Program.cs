@@ -12,6 +12,17 @@ builder.Services.AddDbContext<StoreContext>(options =>
     m => m.MigrationsAssembly("searching.troll.Api"));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:5173")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+    });
+
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Searching Troll Api", Version = "v1" });
@@ -26,7 +37,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Searching Troll Api V1");
 }
 );
-
+app.UseCors();
 app.MapControllers();
 
 app.Run();
